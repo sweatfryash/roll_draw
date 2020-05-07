@@ -1,0 +1,28 @@
+
+import 'package:flutter/material.dart';
+import 'package:rolldraw/roll_pie.dart';
+
+class MyHomePage extends StatefulWidget {
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('抽奖'),
+      ),
+      body: Center(
+        child: Card(
+          color: Colors.white,
+          child: RollPie(),
+          ),
+        ),
+    );
+  }
+
+}
